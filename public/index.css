@@ -473,6 +473,7 @@ p {
   line-height: 24px;
   color: #4D4D4D;
   margin-right: 8px;
+  font-family: 'Myfont';
 }
 
 .downloadbtn {
@@ -485,8 +486,12 @@ p {
 }
 
 .tableheader {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+  grid-template-columns: 2fr 2fr 2fr 2fr 1fr;
   background-color: #F2F2F2;
   padding: 10px 12px 10px 12px;
   margin-top: 20px;
@@ -495,11 +500,20 @@ p {
   font-family: 'Myfont2';
 }
 
+.tableheader p:last-child {
+  text-align: right;
+}
+
 .tablerow {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+  grid-template-columns: 2fr 2fr 2fr 2fr 1fr;
   padding: 14px 12px 14px 12px;
   border-bottom: 1px solid #D9D9D9;
+}
+
+.tablerow p:last-child {
+  text-align: right;
 }
 
 .tablerow a,

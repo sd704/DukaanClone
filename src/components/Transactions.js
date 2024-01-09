@@ -1,3 +1,5 @@
+import TableRow from "./TableRow";
+
 function Transactions() {
     return (
         <div className="transactions">
@@ -29,87 +31,12 @@ function Transactions() {
                 <p>Order amount</p>
             </div>
 
-            <div className="tablerow">
-                <a href="/">#281209</a>
-                <div>
-                    <div className="statusdot"></div>
-                    <p>Successful</p>
-                </div>
-                <p>131634495747</p>
-                <p>Today, 08:45 PM</p>
-                <p>₹1,125.00</p>
-            </div>
-
-            <div className="tablerow">
-                <a href="/">#281208</a>
-                <div>
-                    <div className="statusdot"></div>
-                    <p>Processing</p>
-                </div>
-                <p>131634495747</p>
-                <p>Yesterday, 3:00 PM</p>
-                <p>₹1,125.00</p>
-            </div>
-            <div className="tablerow">
-                <a href="/">#281209</a>
-                <div>
-                    <div className="statusdot"></div>
-                    <p>Successful</p>
-                </div>
-                <p>131634495747</p>
-                <p>12 Jul 2023, 03:00 PM</p>
-                <p>₹1,125.00</p>
-            </div>
-            <div className="tablerow">
-                <a href="/">#281209</a>
-                <div>
-                    <div className="statusdot"></div>
-                    <p>Successful</p>
-                </div>
-                <p>131634495747</p>
-                <p>12 Jul 2023, 03:00 PM</p>
-                <p>₹1,125.00</p>
-            </div>
-            <div className="tablerow">
-                <a href="/">#281209</a>
-                <div>
-                    <div className="statusdot"></div>
-                    <p>Successful</p>
-                </div>
-                <p>131634495747</p>
-                <p>12 Jul 2023, 03:00 PM</p>
-                <p>₹1,125.00</p>
-            </div>
-            <div className="tablerow">
-                <a href="/">#281209</a>
-                <div>
-                    <div className="statusdot"></div>
-                    <p>Successful</p>
-                </div>
-                <p>131634495747</p>
-                <p>12 Jul 2023, 03:00 PM</p>
-                <p>₹1,125.00</p>
-            </div>
-            <div className="tablerow">
-                <a href="/">#281209</a>
-                <div>
-                    <div className="statusdot"></div>
-                    <p>Successful</p>
-                </div>
-                <p>131634495747</p>
-                <p>12 Jul 2023, 03:00 PM</p>
-                <p>₹1,125.00</p>
-            </div>
-            <div className="tablerow">
-                <a href="/">#281209</a>
-                <div>
-                    <div className="statusdot"></div>
-                    <p>Successful</p>
-                </div>
-                <p>131634495747</p>
-                <p>12 Jul 2023, 03:00 PM</p>
-                <p>₹1,125.00</p>
-            </div>
+            <TableRow id="#281209" status="s" tid="131634495747" time="Today, 08:45 PM" price="₹1,125.00" />
+            <TableRow id="#281208" status="p" tid="131634495747" time="Yesterday, 3:00 PM" price="₹1,125.00" />
+            <TableRow id="#281207" status="s" tid="131634495747" time="12 Jul 2023, 03:00 PM" price="₹1,125.00" />
+            <TableRow id="#281206" status="s" tid="131634495747" time="12 Jul 2023, 01:00 PM" price="₹1,125.00" />
+            <TableRow id="#281205" status="s" tid="131634495747" time="11 Jul 2023, 03:00 PM" price="₹1,125.00" />
+            <TableRow id="#281204" status="s" tid="131634495747" time="11 Jul 2023, 02:00 PM" price="₹1,125.00" />
 
         </div>
     );
