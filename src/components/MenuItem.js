@@ -6,7 +6,7 @@ function MenuItem(props) {
 
     return (
         <div className="menuitem" style={menuStyle}>
-            <img src={`/icons/${props.icon}.svg`} alt={`${props.icon}`}></img>
+            <img src={`./icons/${props.icon}.svg`} alt={`${props.icon}`}></img>
             <h1>{props.page}</h1>
         </div>
     );
